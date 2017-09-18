@@ -31,3 +31,9 @@ func FetchTable() {
     print(arrCheck.count)
 }
 ```
+# Delete Records
+```
+func DeleteTable() {
+    Coredatabase().DeleteTableFromCoreDatabase(entityName: "StoreData")
+}
+```
