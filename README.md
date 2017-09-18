@@ -23,3 +23,11 @@ func InsertAndUpdateRecordsInTable() {
     }
 }
 ```
+# Fetch Records
+```
+func FetchTable() {
+    let arrCheck:NSArray = Coredatabase().fetchData(entityName: "StoreData", prediction: "")
+    print(arrCheck)
+    print(arrCheck.count)
+}
+```
