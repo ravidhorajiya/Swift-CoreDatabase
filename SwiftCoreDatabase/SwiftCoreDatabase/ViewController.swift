@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         }
         else
         {
-            print("Records not iserted")
+            print("Records not inserted")
         }
     }
     
