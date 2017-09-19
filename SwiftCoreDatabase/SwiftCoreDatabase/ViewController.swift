@@ -46,6 +46,10 @@ class ViewController: UIViewController {
         Coredatabase().DeleteTableFromCoreDatabase(entityName: "StoreData")
     }
     
+    func SingleRecordsDelete() {
+        Coredatabase().SingleRecordsDeleteTableFromCoreDatabase(entityName: "StoreData", prediction: "")
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
