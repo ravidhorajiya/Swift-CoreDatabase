@@ -121,4 +121,23 @@ class Coredatabase: NSObject {
             }
         }
     }
+    
+    //MARK: - Single Record Delete from CoreDatabase
+    func SingleRecordsDeleteTableFromCoreDatabase(entityName:NSString, prediction:NSString) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let arrDelete:NSArray = Coredatabase().fetchData(entityName: entityName, prediction: prediction)
+        
+        if arrDelete.count > 0 {
+            for managedObjectContext in arrDelete {
+                context.delete(managedObjectContext as! NSManagedObject)
+            }
+            do {
+                try context.save()
+            } catch let error as NSError {
+                print("Could not save. \(error), \(error.userInfo)")
+            }
+        }
+    }
 }
