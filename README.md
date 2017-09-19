@@ -37,3 +37,9 @@ func DeleteTable() {
     Coredatabase().DeleteTableFromCoreDatabase(entityName: "StoreData")
 }
 ```
+# Single Records Delete from Database
+```
+func SingleRecordsDelete() {
+    Coredatabase().SingleRecordsDeleteTableFromCoreDatabase(entityName: "StoreData", prediction: "") //Add Prediction Value
+}
+```
