@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F1936C51F70E6CE0045B889 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1936C41F70E6CE0045B889 /* CoreDataStack.swift */; };
 		9F9506151F6FA3DD0094F38F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9506141F6FA3DD0094F38F /* AppDelegate.swift */; };
 		9F9506171F6FA3DD0094F38F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9506161F6FA3DD0094F38F /* ViewController.swift */; };
 		9F95061A1F6FA3DD0094F38F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F9506181F6FA3DD0094F38F /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F1936C41F70E6CE0045B889 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		9F9506111F6FA3DD0094F38F /* SwiftCoreDatabase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCoreDatabase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F9506141F6FA3DD0094F38F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F9506161F6FA3DD0094F38F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				9F9506481F6FA5950094F38F /* Coredatabase.swift */,
+				9F1936C41F70E6CE0045B889 /* CoreDataStack.swift */,
 			);
 			path = Coredatabase;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F1936C51F70E6CE0045B889 /* CoreDataStack.swift in Sources */,
 				9F9506171F6FA3DD0094F38F /* ViewController.swift in Sources */,
 				9F95061D1F6FA3DD0094F38F /* SwiftCoreDatabase.xcdatamodeld in Sources */,
 				9F9506151F6FA3DD0094F38F /* AppDelegate.swift in Sources */,
@@ -433,6 +437,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 228777C638;
 				INFOPLIST_FILE = SwiftCoreDatabase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.whiteorangesoftware.SwiftCoreDatabase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -446,6 +451,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 228777C638;
 				INFOPLIST_FILE = SwiftCoreDatabase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.whiteorangesoftware.SwiftCoreDatabase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -530,6 +536,7 @@
 				9F95063E1F6FA3DE0094F38F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F95063F1F6FA3DE0094F38F /* Build configuration list for PBXNativeTarget "SwiftCoreDatabaseTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +545,7 @@
 				9F9506411F6FA3DE0094F38F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F9506421F6FA3DE0094F38F /* Build configuration list for PBXNativeTarget "SwiftCoreDatabaseUITests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +554,7 @@
 				9F9506441F6FA3DE0094F38F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

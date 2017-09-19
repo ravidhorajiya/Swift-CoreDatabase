@@ -12,13 +12,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.InsertAndUpdateRecordsInTable()
+        self.FetchTable()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     func InsertAndUpdateRecordsInTable() {
         let dictTemp:NSMutableDictionary = NSMutableDictionary.init()
-        dictTemp.setValue("1", forKey: "uid");
+        dictTemp.setValue("3", forKey: "uid");
         dictTemp.setValue("Ravi", forKey: "name");
         dictTemp.setValue("Surat", forKey: "address");
         
@@ -47,7 +49,7 @@ class ViewController: UIViewController {
     }
     
     func SingleRecordsDelete() {
-        Coredatabase().SingleRecordsDeleteTableFromCoreDatabase(entityName: "StoreData", prediction: "") //Add Prediction Value
+        Coredatabase().SingleRecordsDeleteTableFromCoreDatabase(entityName: "StoreData", prediction: "")
     }
     
     override func didReceiveMemoryWarning() {
