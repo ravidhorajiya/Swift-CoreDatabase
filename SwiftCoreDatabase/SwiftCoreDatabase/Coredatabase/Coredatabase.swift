@@ -13,8 +13,8 @@ class Coredatabase: NSObject {
     
     //MARK: - Fetch CoreDatabase
     func fetchData(entityName:NSString, prediction:NSString) -> NSArray {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context = appDelegate.persistentContainer.viewContext
+        _ = UIApplication.shared.delegate as! AppDelegate
+        let context = CoreDataStack.managedObjectContext
         
         let entityDesc:NSEntityDescription = NSEntityDescription.entity(forEntityName: entityName as String, in: context)!
         
@@ -48,8 +48,8 @@ class Coredatabase: NSObject {
     func InsertAndUpdateData(entityData:NSMutableArray, entityName:NSString, prediction:NSString) -> Bool {
         var insertSuccess = false
         
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context = appDelegate.persistentContainer.viewContext
+        _ = UIApplication.shared.delegate as! AppDelegate
+        let context = CoreDataStack.managedObjectContext
         
         let FetchReq:NSFetchRequest<NSFetchRequestResult>
         FetchReq = NSFetchRequest.init(entityName: entityName as String)
@@ -105,8 +105,8 @@ class Coredatabase: NSObject {
     
     //MARK: - Delete Record from CoreDatabase
     func DeleteTableFromCoreDatabase(entityName:NSString) {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context = appDelegate.persistentContainer.viewContext
+        _ = UIApplication.shared.delegate as! AppDelegate
+        let context = CoreDataStack.managedObjectContext
         
         let arrDelete:NSArray = Coredatabase().fetchData(entityName: entityName, prediction: "")
         
@@ -124,8 +124,8 @@ class Coredatabase: NSObject {
     
     //MARK: - Single Record Delete from CoreDatabase
     func SingleRecordsDeleteTableFromCoreDatabase(entityName:NSString, prediction:NSString) {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context = appDelegate.persistentContainer.viewContext
+        _ = UIApplication.shared.delegate as! AppDelegate
+        let context = CoreDataStack.managedObjectContext
         
         let arrDelete:NSArray = Coredatabase().fetchData(entityName: entityName, prediction: prediction)
         
