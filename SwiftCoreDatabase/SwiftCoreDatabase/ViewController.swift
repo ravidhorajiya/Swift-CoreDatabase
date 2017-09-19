@@ -47,7 +47,7 @@ class ViewController: UIViewController {
     }
     
     func SingleRecordsDelete() {
-        Coredatabase().SingleRecordsDeleteTableFromCoreDatabase(entityName: "StoreData", prediction: "")
+        Coredatabase().SingleRecordsDeleteTableFromCoreDatabase(entityName: "StoreData", prediction: "") //Add Prediction Value
     }
     
     override func didReceiveMemoryWarning() {
